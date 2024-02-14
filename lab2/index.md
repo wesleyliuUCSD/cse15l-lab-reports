@@ -42,24 +42,24 @@ class ChatServer {
 ```
 While I do not use multiple methods in my code, I can describe the values of all intermediary variables I used for each image.
 ![Image](./screenshot1.png)
-After this url is visited, **handleRequest** method is run with the given url \
+After this url is visited, ```handleRequest``` method is run with the given url \
 ```0.0.0.0:3020/add-message?s=Hola, Como Estas&user=wesley0``` \
-Afterwards, since the path is not simply /, the code enters the else section of the first if-else statement. Then, since the path is /add-message, it enters the if section of the 2nd if-else statement. We first split by the "&" character as to split our two parameters apart so we can get each of their values individually, thus parameters becomes an array of two strings:
+Afterwards, since the path is not simply /, the code enters the else section of the first if-else statement. Then, since the path is /add-message, it enters the if section of the 2nd if-else statement. We first split by the ```"&"``` character as to split our two parameters apart so we can get each of their values individually, thus parameters becomes an array of two strings:
 ```parameters = ["s=Hola, Como Estas", "user=wesley0]"```\
 After that, we split each string in parameters along the "=" character to split the query paramater from its value, so we get ```a = ["s", "Hola, Como Estas"]``` and ```b = ["user", "wesley0"]```
-We then check that both parameters are correct, ie first parameter is s, second parameter is user, and if this is ture, we concactenate the string currString we track with a formatted version of our two parameter values from s and user.
+We then check that both parameters are correct, ie first parameter is s, second parameter is user, and if this is ture, we concactenate class ```Handler```'s class field, string ```currString```, with a formatted version of our two parameter values from s and user.
 
-In this case, our value that we track **currString** changes from empty string "" to "wesley0:\tHola,+Como+Estas\n"
+In this case, the class field of ```Handler```, ```currString``` changes from empty string ```""``` to ```"wesley0:\tHola,+Como+Estas\n"```
 
 ![Image](./screenshot2.png)
-After this url is visited  **handleRequest** method is run with the given url \
+After this url is visited  ```handleRequest``` method is run with the given url \
 ```0.0.0.0:3020/add-message?s=Hola, Estoy Bien&user=wesley1``` \
-Afterwards, since the path is not simply /, the code enters the else section of the first if-else statement. Then, since the path is /add-message, it enters the if section of the 2nd if-else statement. We first split by the "&" character as to split our two parameters apart so we can get each of their values individually, thus parameters becomes an array of two strings:
+Afterwards, since the path is not simply ```/```, the code enters the else section of the first if-else statement. Then, since the path is /add-message, it enters the if section of the 2nd if-else statement. We first split by the ```"&"``` character as to split our two parameters apart so we can get each of their values individually, thus parameters becomes an array of two strings:
 ```parameters = ["s=Hola, Estoy Bien", "user=wesley1]"```\
 After that, we split each string in parameters along the "=" character to split the query paramater from its value, so we get ```a = ["s", "Hola, Estoy Bien"]``` and ```b = ["user", "wesley1"]```
-We then check that both parameters are correct, ie first parameter is s, second parameter is user, and if this is ture, we concactenate the string currString we track with a formatted version of our two parameter values from s and user.
+We then check that both parameters are correct, ie first parameter is s, second parameter is user, and if this is ture, we concactenate class ```Handler```'s class field, string ```currString```, with a formatted version of our two parameter values from s and user.
 
-In this case, our value that we track **currString** changes from string "wesley0:\tHola,+Como+Estas\n" to "wesley0:\tHola,+Como+Estas\nwesley1:\tHola,+Estoy+Bien\n"
+In this case, the class field of ```Handler```, ```currString``` changes from string ```"wesley0:\tHola,+Como+Estas\n"``` to ```"wesley0:\tHola,+Como+Estas\nwesley1:\tHola,+Estoy+Bien\n"```
 
 ## Part 2
 
