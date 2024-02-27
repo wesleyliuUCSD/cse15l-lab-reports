@@ -2,10 +2,13 @@
 
 
 Keys pressed:\
+
 ```cmd+C``` this command:
+
 ```
 ssh wyl002@ieng6-201.ucsd.edu
 ```
+
 ```cmd+v<enter>``` 4. to log into ieng6
 
 ```cs1<tab><enter>``` 
