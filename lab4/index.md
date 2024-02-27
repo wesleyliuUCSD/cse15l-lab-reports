@@ -11,6 +11,7 @@ ssh wyl002@ieng6-201.ucsd.edu
 ```cs1<tab><enter>``` 
 
 ```cmd+C``` this ssh 
+
 ```
 git@github.com:wesleyliuUCSD/lab7.git
 ```
