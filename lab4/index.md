@@ -15,6 +15,7 @@ ssh wyl002@ieng6-201.ucsd.edu
 ```
 git@github.com:wesleyliuUCSD/lab7.git
 ```
+
 ```git clo<tab><cmd+v><enter>``` 5. to clone the repo
 
 ```cd l<tab><enter>```
