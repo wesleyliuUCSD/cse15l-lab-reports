@@ -1,13 +1,13 @@
 # Lab 4 Report
 
 
-Keys pressed:\
+Keys pressed:
 
 ```cmd+C``` this command:
 
-```
-ssh wyl002@ieng6-201.ucsd.edu
-```
+
+    ssh wyl002@ieng6-201.ucsd.edu
+
 
 ```cmd+v<enter>``` 4. to log into ieng6
 
@@ -15,9 +15,9 @@ ssh wyl002@ieng6-201.ucsd.edu
 
 ```cmd+C``` this ssh 
 
-```
-git@github.com:wesleyliuUCSD/lab7.git
-```
+
+    git@github.com:wesleyliuUCSD/lab7.git
+
 
 ```git clo<tab><cmd+v><enter>``` 5. to clone the repo
 
